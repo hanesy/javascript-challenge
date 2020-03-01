@@ -36,7 +36,7 @@ resetbtn.on("click", function() {
   commentsearch.property("value", "");
 });
 
-// reset search defaults
+// reset other search defaults after performing a search on a criteria
 function resetSearch(query) {
 
   if (query !== "date"){
@@ -59,7 +59,7 @@ function resetSearch(query) {
   }
 }
 
-// reset search defaults
+// search String function
 function searchString(query) {
   if (query === "date"){
     var searchstring = datesearch.property("value");
