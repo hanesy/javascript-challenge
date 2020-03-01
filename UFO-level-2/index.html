@@ -26,28 +26,151 @@
       <p>The Truth is Out There</p>
     </div>
     <div class="container">
-      <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
-              </div>
-            </div>
-          </aside>
+      <!-- Reset Row -->
+      <div class="row margin-top-10">
+        <div class = "col-md-12">
+          <button id="reset-btn" type="button" class="btn btn-default">Reset Search</button>
         </div>
-        <div class="col-md-10">
+      </div>
+      <!-- Filter Row -->
+        <div class="row margin-top-25">
+          <!-- Date Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Date Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter a Date</label>
+                          <input class="form-control" id="datesearch" type="text" placeholder="'1/11/2011'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="date-btn" type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>  date</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- City Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">City Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="city">Enter a City</label>
+                          <input class="form-control" id="citysearch" type="text" placeholder="'el cajon'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="city-btn" type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>  city</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- State Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">State Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="state">Enter a State</label>
+                          <input class="form-control" id="statesearch" type="text" placeholder="'ny'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="state-btn" type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>  state</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- Country Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Country Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="country">Enter a Country</label>
+                          <input class="form-control" id="countrysearch" type="text" placeholder="'us'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="country-btn" type="button" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search"></span>  country</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <!-- Shape Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Shape Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="shape">Enter a Shape</label>
+                          <input class="form-control" id="shapesearch" type="text" placeholder="'triangle'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="shape-btn" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>  shape</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <!-- Comment Search -->
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Comment Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="comment">Enter a String</label>
+                          <input class="form-control" id="commentsearch" type="text" placeholder="'bright'">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="comment-btn" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-search"></span>  comment</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+      <!-- Table Row -->
+        <div class="row margin-top-50">
+        <div class="col-md-12">
           <div id="table-area" class="">
             <table id="ufo-table" class="table table-striped">
               <thead>
